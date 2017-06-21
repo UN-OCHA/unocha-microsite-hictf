@@ -15,7 +15,7 @@ title: Featured Speakers
 
 			<div class="speakers-list">
 				{% for speaker in site.speakers %}
-					<a href="{{ speaker.url }}" class="speaker-summary">
+					<a href="{{ speaker.url | prepend: site.baseurl }}" class="speaker-summary">
 						<img src="{{ site.baseurl }}/assets/images/speakers/{{ speaker.photo }}" alt="" class="speaker-summary__image" />
 						<span class="speaker-summary__content">
 							<span class="speaker-summary__name">{{ speaker.speaker-name }}</span>
