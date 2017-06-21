@@ -42,7 +42,7 @@ To run the Jekyll site and watch for changes to sass and js:
 grunt serve
 ```
 
-Go to http://localhost:4000/
+Go to http://localhost:4000/unocha-microsite-hictf/
 
 ### Deploying
 
