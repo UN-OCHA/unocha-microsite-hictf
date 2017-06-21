@@ -1,0 +1,80 @@
+.hero {
+	background: $primary-bg-color;
+	padding: $base-unit*2 0;
+	text-align: center;
+	color: white;
+	margin-bottom: $base-unit*2;
+
+	p + p {
+		margin-top: $base-unit/2;
+	}
+}
+
+.hero__heading {
+	text-transform: uppercase;
+	@include font-size($large-font-size);
+	font-weight: bold;
+	margin-bottom: $base-unit/2;
+}
+
+@include media-query(md) {
+
+	.hero {
+		background: $primary-bg-color url('../images/hero-bg.jpg') center no-repeat;
+		background-size: cover;
+		height: 300px;
+
+		.container {
+			display: flex;
+			flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    height: 100%;
+		}
+
+		p + p {
+			margin-top: $base-unit;
+		}
+
+		&.hero--speakers {
+			background: $primary-bg-color url('../images/hero-speakers-bg.jpg') center no-repeat;
+		}
+
+		&.hero--agenda {
+			background: $primary-bg-color url('../images/hero-agenda-bg.jpg') top center no-repeat;
+		}
+	}
+
+	.hero__heading, .hero p {
+		display: inline-block;
+		padding: $base-unit/2 $base-unit;
+		background: rgba(255,255,255,0.8);
+		color: $heading-text-color;
+	}
+
+	.hero__heading {
+		margin-bottom: $base-unit;
+	}
+
+	.hero p {
+		line-height: 1.2;
+	}
+
+}
+
+@include media-query(lg) {
+
+	.hero {
+		height: 400px;
+		margin-bottom: $base-unit*5;
+
+		p {
+			@include font-size($medium-font-size);
+		}
+	}
+
+	.hero__heading {
+		@include font-size($x-large-font-size);
+	}
+
+}

@@ -1,0 +1,23 @@
+<header role="banner" class="site-header">
+  <div class="container">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="site-header__inner">
+
+      <a href="{{ site.baseurl }}/" class="site-header__logo">
+        <img src="{{ "/assets/images/hictf-logo.svg" | prepend: site.baseurl }}" alt="Humanitarian ICT Forum" />
+      </a>
+
+      <button type="button" data-toggle-nav id="toggleNav" class="mobile-nav-btn" aria-label="nav" aria-controls="nav">
+        <svg aria-hidden="true"><use xlink:href="{{ "/assets/icons/symbol-defs.svg#icon-menu" | prepend: site.baseurl }}"></use></svg>
+        <span class="sr-only">Show navigation</span>
+      </button>
+
+      <nav role="navigation" data-nav id="nav" class="nav" aria-labelledby="toggleNav">
+        <a href="{{ site.baseurl }}/" class="nav__link {% if page.url == "/" %} nav__link--active{% endif %}">Home</a>
+        <a href="{{ site.baseurl }}/speakers.html" class="nav__link {% if page.url == "/speakers.html" %} nav__link--active{% endif %}">Speakers</a>
+        <a href="{{ site.baseurl }}/agenda.html" class="nav__link {% if page.url == "/agenda.html" %} nav__link--active{% endif %}">Agenda</a>
+      </nav>
+
+    </div>
+  </div>
+</header>

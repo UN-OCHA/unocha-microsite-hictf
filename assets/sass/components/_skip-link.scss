@@ -1,0 +1,9 @@
+.skip-link {
+	position: absolute;
+	left: -99999px;
+	@include font-size($small-font-size);
+
+	&:focus {
+		left: 0;
+	}
+}

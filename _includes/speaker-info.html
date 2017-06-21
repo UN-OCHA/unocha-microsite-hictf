@@ -1,0 +1,49 @@
+<div class="container speaker-hero">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="speaker-hero__inner">
+        <img src="{{ site.baseurl }}/assets/images/speakers/{{ page.photo }}" alt="" class="speaker-hero__image" />
+        <div class="speaker-hero__info">
+          <h1 class="speaker-hero__name">{{ page.speaker-name }}</h1>
+          <p class="speaker-hero__job">{{ page.job }}</p>
+          <p class="speaker-social">
+            {% if page.linkedin %}
+              <a href="{{ page.linkedin}}" class="speaker-social__link">
+                <svg aria-hidden="true"><use xlink:href="{{ "/assets/icons/symbol-defs.svg#icon-linkedin" | prepend: site.baseurl }}"></use></svg>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            {% endif %}
+            {% if page.facebook %}
+              <a href="{{ page.facebook}}" class="speaker-social__link">
+                <svg aria-hidden="true"><use xlink:href="{{ "/assets/icons/symbol-defs.svg#icon-facebook" | prepend: site.baseurl }}"></use></svg>
+                <span class="sr-only">Facebook</span>
+              </a>
+            {% endif %}
+            {% if page.twitter %}
+              <a href="{{ page.twitter}}" class="speaker-social__link">
+                <svg aria-hidden="true"><use xlink:href="{{ "/assets/icons/symbol-defs.svg#icon-twitter" | prepend: site.baseurl }}"></use></svg>
+                <span class="sr-only">Twitter</span>
+              </a>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container main-content main-content--speaker">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<div class="container main-content">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <a href="../speakers.html">See all speakers</a>
+    </div>
+  </div>
+</div>

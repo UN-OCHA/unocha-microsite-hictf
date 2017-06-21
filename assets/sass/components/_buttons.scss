@@ -1,0 +1,25 @@
+button {
+	-webkit-appearance: none;
+}
+
+.subscribe__btn {
+	background: $highlight-bg-color;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: $heading-font;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	padding: $base-unit*2;
+	@include font-size($medium-font-size);
+	border: 1px solid $highlight-bg-color;
+	transition: all 0.3s ease;
+
+	&:hover, &:focus {
+		background: white;
+		color: $highlight-bg-color;
+	}
+}

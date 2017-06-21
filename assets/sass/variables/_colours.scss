@@ -1,0 +1,21 @@
+$blue: #0565AD;
+$red: #ef3d23;
+$dark-grey: #435a65;
+$light-grey: #f7f7f7;
+
+// Text colours
+$body-text-color: #435a65;
+$heading-text-color: $blue;
+$highlight-color: $red;
+
+$link-text-color: $blue;
+$active-link-text-color: darken($link-text-color, 10%);
+
+// Background colors
+$light-bg-color: $light-grey;
+$dark-bg-color: $dark-grey;
+$primary-bg-color: $blue;
+$highlight-bg-color: $red;
+
+// Border colours
+$highlight-border-color: $red;

@@ -1,0 +1,42 @@
+.site-header {
+	margin-bottom: $base-unit*2;
+}
+
+.site-header__logo {
+	margin-top: $base-unit*2;
+	width: 205px;
+	height: 44px;
+	display: block;
+
+	.no-flexbox & {
+		float: left;
+	}
+}
+
+@include media-query(md) {
+
+	.site-header {
+		margin-bottom: 0;
+	}
+
+	.site-header__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.site-header__logo {
+		width: 160px;
+		height: 34px;
+		margin: $base-unit*2 0;
+	}
+
+}
+
+@include media-query(lg) {
+
+	.site-header__logo {
+		width: 205px;
+		height: 44px;
+	}
+
+}

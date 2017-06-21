@@ -1,0 +1,32 @@
+---
+layout: default
+title: Featured Speakers
+---
+<div class="hero hero--speakers">
+	<div class="container">
+		<h1 class="hero__heading">Featured Speakers</h1>
+    <p>Experts and innovators driving change in the humanitarian and technology communities</p>
+  </div>
+</div>
+
+<div class="container main-content">
+	<div class="row">
+		<div class="col-xs-12">
+
+			<div class="speakers-list">
+				{% for speaker in site.speakers %}
+					<a href="{{ speaker.url }}" class="speaker-summary">
+						<img src="{{ site.baseurl }}/assets/images/speakers/{{ speaker.photo }}" alt="" class="speaker-summary__image" />
+						<span class="speaker-summary__content">
+							<span class="speaker-summary__name">{{ speaker.speaker-name }}</span>
+							<span class="speaker-summary__job">{{ speaker.job }}</span>
+						</span>
+					</a>
+				{% endfor %}
+
+			</div>
+
+		</div>
+	</div>
+</div>
+

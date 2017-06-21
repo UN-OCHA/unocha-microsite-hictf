@@ -1,0 +1,17 @@
+.footer {
+	background: $dark-bg-color;
+	color: white;
+	padding: $base-unit*2 0;
+
+	img {
+		width: 150px;
+	}
+
+	a {
+		color: white;
+	}
+}
+
+.footer__credits {
+	@include font-size($small-font-size);
+}

@@ -1,0 +1,67 @@
+.agenda-heading {
+	margin-bottom: $base-unit*2;
+}
+
+.agenda-item + .agenda-heading {
+	margin-top: $base-unit*3;
+}
+
+.agenda-item {
+	margin-bottom: $base-unit;
+	background: $light-bg-color;
+	padding: $base-unit;
+
+	&:last-of-type {
+		margin-bottom: $base-unit*2;
+	}
+}
+
+.agenda-item__title {
+	font-family: $body-font;
+	font-weight: bold;
+	color: $body-text-color;
+	margin-bottom: $base-unit/2;
+
+}
+
+.agenda-item__time {
+	@include font-size($small-font-size);
+	margin-bottom: $base-unit/2;
+}
+
+.agenda-item__speakers {
+	@include font-size($small-font-size);
+}
+
+@include media-query(md) {
+
+	.agenda-item {
+		padding: $base-unit*2 $base-unit*2 $base-unit $base-unit*12;
+		position: relative;
+		margin-bottom: $base-unit*1.5;
+
+		&:last-of-type {
+			margin-bottom: $base-unit*5;
+		}
+	}
+
+	.agenda-item__title {
+		margin-bottom: $base-unit;
+	}
+
+	.agenda-item__time, .agenda-item__speakers {
+		@include font-size($base-font-size);
+	}
+
+	.agenda-item__time {
+		position: absolute;
+		left: $base-unit*2;
+		top: $base-unit*1.5;
+		width: $base-unit*10
+	}
+
+	.agenda-item__speakers {
+		margin-bottom: $base-unit;
+	}
+
+}

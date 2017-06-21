@@ -1,0 +1,38 @@
+.image-block {
+	display: block;
+	width: 100%;
+	float: left;
+	margin: $base-unit*3 0;
+	position: relative;
+	line-height: 0;
+}
+
+.image-block__caption {
+	@include font-size($small-font-size);
+	display: inline-block;
+	background: white;
+	bottom: $base-unit/2;
+	left: 0;
+	position: absolute;
+	max-width: 95%;
+	padding: $base-unit/2;
+	line-height: 1.2;
+}
+
+@include media-query(sm) {
+
+	.image-block--left, .image-block--right {
+		max-width: 60%;
+		width: 300px;
+	}
+
+	.image-block--left {
+		margin: $base-unit*3 $base-unit*3 $base-unit*3 0;
+		float: left;
+	}
+
+	.image-block--right {
+		float: right;
+		margin: $base-unit*3 0 $base-unit*3 $base-unit*3;
+	}
+}
