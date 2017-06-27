@@ -28,6 +28,10 @@
 	}
 }
 
+.featured-link__caption {
+	display: none;
+}
+
 @include media-query(md) {
 
 	.featured-link {
@@ -41,7 +45,6 @@
     	display: block;
     	width: 45%;
     	height: 100%;
-
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -79,5 +82,20 @@
 			@include font-size($x-large-font-size);
 		}
 	}
+
+	.featured-link__caption {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		@include font-size($small-font-size);
+		background: white;
+		background: rgba(255,255,255,0.9);
+		color: $body-text-color;
+		padding: $base-unit/2;
+    line-height: 1.2;
+	}
+
 
 }
