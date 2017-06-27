@@ -44,6 +44,9 @@ function initBanner () {
 
   var banner = document.querySelector('[data-banner]');
   var bannerBtn = document.querySelector('[data-banner-btn]');
+  if (!banner) {
+    return;
+  }
 
   bannerBtn.addEventListener('click', function() {
     bannerBtn.setAttribute('aria-expanded', false);
