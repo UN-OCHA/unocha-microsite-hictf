@@ -1,0 +1,51 @@
+.banner {
+	background: $primary-bg-color;
+	color: white;
+	@include font-size($small-font-size);
+	font-weight: bold;
+	text-align: center;
+	padding: $base-unit 0;
+
+	.container {
+		position: relative;
+	}
+
+	p {
+		padding: 0 $base-unit*3 0 0;
+	}
+
+	a {
+		color: white;
+	}
+
+	&[aria-hidden="true"] {
+		display: none;
+	}
+}
+
+.banner__btn {
+	background: white;
+	border: none;
+	width: $base-unit*3;
+	height: $base-unit*3;
+	position: absolute;
+	top: -$base-unit;
+	right: 0;
+
+	svg {
+		fill: $heading-text-color;
+	}
+}
+
+@include media-query(sm) {
+
+	.banner {
+		padding: $base-unit*1.5 0;
+	}
+
+	.banner__btn {
+		top: -$base-unit/2;
+		right: $base-unit;
+	}
+
+}

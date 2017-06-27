@@ -1,6 +1,7 @@
 (function () {
   'use strict';
   initNav();
+  initBanner();
 })();
 
 function initNav () {
@@ -36,4 +37,16 @@ function updateNav (breakpoint, toggleNavBtn, nav) {
 	}
 	toggleNavBtn.setAttribute('aria-expanded', false);
   nav.setAttribute('aria-hidden', true);
+}
+
+function initBanner () {
+  'use strict';
+
+  var banner = document.querySelector('[data-banner]');
+  var bannerBtn = document.querySelector('[data-banner-btn]');
+
+  bannerBtn.addEventListener('click', function() {
+    bannerBtn.setAttribute('aria-expanded', false);
+    banner.setAttribute('aria-hidden', true);
+  });
 }
