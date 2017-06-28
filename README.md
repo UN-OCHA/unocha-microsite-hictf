@@ -46,6 +46,12 @@ Go to http://localhost:4000/unocha-microsite-hictf/
 
 ### Deploying
 
+## Content changes
+
+Simple content changes can be made directly to the HTML and Markdown files in GitHub, any changes committed to the master branch will be deployed automatically to the live site.
+
+## Styling / layout changes
+
 1. Compile the front end resources (Grunt is used for this instead of the standard Jekyll way).
 ```
 grunt
