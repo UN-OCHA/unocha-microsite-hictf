@@ -16,7 +16,7 @@
 title: Humanitarian ICT Forum 2017
 description: > # this means to ignore newlines until "baseurl:"
   Humanitarian ICT Forum 2017 - The Participation Revolution: Empowering Affected People
-baseurl: "/unocha-microsite-hictf" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
