@@ -1,3 +1,7 @@
+# ⚠️ Archived ⚠️
+
+This repository no longer receives updates of any kind. If you clone the repository and use the code, be advised that it may contain security vulnerabilities.
+
 # unocha-microsite-hictf
 
 Static site for the Humanitarian ICT Forum 2017.
