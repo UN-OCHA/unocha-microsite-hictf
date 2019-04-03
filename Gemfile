@@ -1,6 +1,9 @@
 source "https://rubygems.org"
 ruby '2.4.4'
 
+# OPS-5392
+gem 'nokogiri', '>= 1.8.5'
+
 # We're publishing to GitHub Pages
 gem "github-pages", group: :jekyll_plugins
 
